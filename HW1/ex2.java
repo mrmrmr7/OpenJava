@@ -2,7 +2,7 @@ package CLASSES.HW1;
 
 import java.util.Scanner;
 
-public class n1_2{
+public class ex2{
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         System.out.println("Введи массу в киллограммах: ");

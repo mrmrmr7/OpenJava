@@ -2,7 +2,7 @@ package CLASSES.HW1;
 
 import java.util.*;
 
-public class n1_3
+public class ex3
 {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);

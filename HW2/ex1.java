@@ -1,7 +1,7 @@
 package CLASSES.HW2;
 import java.util.Scanner;
 
-public class n2_1 {
+public class ex1 {
     public static void main(String[] args){
         Point p1 = new Point();
         Point p2 = new Point();
