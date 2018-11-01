@@ -1,3 +1,5 @@
+package CLASSES.HW1;
+
 import java.util.Scanner;
 
 public class n1_2{

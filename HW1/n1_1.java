@@ -1,3 +1,5 @@
+package CLASSES.HW1;
+
 public class n1_1{
     public static void main(String[] arg) {
         for(int i = 0; i < 10; i++)

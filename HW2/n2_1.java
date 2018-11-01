@@ -1,3 +1,4 @@
+package CLASSES.HW2;
 import java.util.Scanner;
 
 public class n2_1 {
@@ -6,9 +7,9 @@ public class n2_1 {
         Point p2 = new Point();
         Point p3 = new Point();
         double dist12, dist23, dist31;
+        dist31 = p3.distanceTo(p1);
         dist12 = p1.distanceTo(p2);
         dist23 = p2.distanceTo(p3);
-        dist31 = p3.distanceTo(p1);
         if((dist12 + dist31 > dist23) || (dist12 + dist23 > dist31) || (dist31 + dist23 > dist12)){
             System.out.println("Треугольник невозможен");
         }
