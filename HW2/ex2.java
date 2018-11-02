@@ -26,7 +26,7 @@ public class ex2 {
        }
 
        System.out.println("Count of heads is: " + headsCount);
-       System.out.println("Count of eyes is: " + (headsCount*2));
+       System.out.println("Count of eyes is: " + (headsCount*2) );
        in.close();
    } 
 }
