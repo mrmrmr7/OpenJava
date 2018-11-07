@@ -12,12 +12,13 @@ public class ex1 {
         dist23 = p2.distanceTo(p3);
         if((dist12 + dist31 > dist23) || (dist12 + dist23 > dist31) || (dist31 + dist23 > dist12)){
             System.out.println("Треугольник невозможен");
-        }
-        if(Point.pifagor(dist12, dist23) == dist31 || Point.pifagor(dist12, dist31) == dist23 || Point.pifagor(dist31, dist23) == dist12){
-            System.out.println("Прямоугольный");
-        }
-        else{
-            System.out.println("Не прямоугольный");
+        }else{
+            if(Point.pifagor(dist12, dist23) == dist31 || Point.pifagor(dist12, dist31) == dist23 || Point.pifagor(dist31, dist23) == dist12){
+                System.out.println("Прямоугольный");
+            }
+            else{
+                System.out.println("Не прямоугольный");
+            }
         }
     }
 }
