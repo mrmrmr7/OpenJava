@@ -14,12 +14,22 @@ public class ex1 {
             ((p1.disTo(p2) + p2.disTo(p3) - p3.disTo(p1)) > 1e-4) ||
             ((p3.disTo(p1) + p2.disTo(p3) - p1.disTo(p2)) > 1e-4)) {
             System.out.println("Треугольник невозможен");
+<<<<<<< HEAD
         } else if (Point.pifagor(p1.disTo(p2), p2.disTo(p3)) == p3.disTo(p1) || 
                    Point.pifagor(p1.disTo(p2), p3.disTo(p1)) == p2.disTo(p3) || 
                    Point.pifagor(p3.disTo(p1), p2.disTo(p3)) == p1.disTo(p2)) {
             System.out.println("Прямоугольный");
         } else {
             System.out.println("Не прямоугольный");
+=======
+        }else{
+            if(Point.pifagor(dist12, dist23) == dist31 || Point.pifagor(dist12, dist31) == dist23 || Point.pifagor(dist31, dist23) == dist12){
+                System.out.println("Прямоугольный");
+            }
+            else{
+                System.out.println("Не прямоугольный");
+            }
+>>>>>>> a2876e3a66b4f0f9d6434304969b5ebc1ac87a36
         }
     }
 }
