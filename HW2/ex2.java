@@ -4,29 +4,29 @@ import java.util.*;
 public class ex2 {
 
    public static void main(String[] args) {
-       Scanner in = new Scanner(System.in);
        int headsCount = 3;
 
        System.out.print("Please, enter the age:");
 
+       Scanner in = new Scanner(System.in);
        int age = in.nextInt();
+       in.close();
 
-       if(age > 200){
+       if (age > 200) {
            age -= 200;
            headsCount += 600;
 
-           if(age > 100){
+           if (age > 100) {
                age -= 100;
                headsCount += 400 + age;
-           }else{
+           } else {
                headsCount += age * 2;
            }
-       }else{
+       } else {
            headsCount += age*3;
        }
 
        System.out.println("Count of heads is: " + headsCount);
        System.out.println("Count of eyes is: " + (headsCount*2) );
-       in.close();
    } 
 }

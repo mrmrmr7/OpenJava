@@ -10,14 +10,14 @@ public class ex5 {
         int month = in.nextInt();
         int year = in.nextInt();
 
-        day += 1;
+        day++;
 
         if((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0))
             months[1]++;
 
         if(day > months[month-1]){
-            day = 1;
-            month += 1;
+            day -= months[month-1];
+            month++;
             if(month > 12){
                 month = 1;
                 year++;
