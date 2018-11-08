@@ -12,7 +12,7 @@ public class ex1{
             a = in.nextInt();
             b = in.nextInt();
             c = in.nextInt();
-        } catch (inputmismatchexception e) {
+        } catch (InputMismatchException e) {
             System.out.println("Wrong type")
         }
         in.close();
