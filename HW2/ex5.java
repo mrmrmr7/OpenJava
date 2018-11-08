@@ -1,14 +1,23 @@
 package CLASSES.HW2;
+
 import java.util.*;
 
 public class ex5 {
-
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
         int months[]={31,28,31,30,31,30,31,31,30,31,30,31};
-        int day = in.nextInt();
-        int month = in.nextInt();
-        int year = in.nextInt();
+        int day = 0; 
+        int month = 0;
+        int year = 0; 
+        
+        Scanner in = new Scanner(System.in);
+        try {
+            day = in.nextInt();
+            month = in.nextInt();
+            year = in.nextInt();
+        } catch (InputMismatchException e) {
+            System.out.println("Wrong type");
+        }
+        in.close();
 
         day++;
 
@@ -25,6 +34,5 @@ public class ex5 {
         }
 
         System.out.println("Next date is: " + day + "/" + month + "/" + year);
-        in.close();
     }
 }

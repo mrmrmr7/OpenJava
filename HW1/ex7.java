@@ -4,10 +4,17 @@ import java.util.Scanner;
 
 public class ex7 {
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
+        int a = 0;
+        int b = 0;
 
-        int a = in.nextInt();
-        int b = in.nextInt();
+        Scanner in = new Scanner(System.in);
+        try {
+            a = in.nextInt();
+            b = in.nextInt();
+        } catch (InputMismatchException e) {
+            System.out.println("Wrong type");
+        }
+        in.close();
 
         System.out.println(a + " to " + b);
         
@@ -16,6 +23,5 @@ public class ex7 {
         a = a - b;
 
         System.out.println(a + " to " + b);
-        in.close();
     }
 }

@@ -1,4 +1,5 @@
 package CLASSES.HW1;
+
 import java.util.Scanner;
 
 public class ex1{
@@ -13,7 +14,7 @@ public class ex1{
             b = in.nextInt();
             c = in.nextInt();
         } catch (InputMismatchException e) {
-            System.out.println("Wrong type")
+            System.out.println("Wrong type");
         }
         in.close();
         

@@ -4,9 +4,16 @@ import java.util.*;
 
 public class ex6 {
     public static void main(String[] args) {
+        int a = 0;
+        
         Scanner in = new Scanner(System.in);
+        try {
+            a = in.nextInt();
+        } catch (InputMismatchException e) {
+            System.out.println("Wrong type");
+        }
+        in.close();
 
-        int a = in.nextInt();
         int res = 0;
 
         while(a > 0){
@@ -16,7 +23,5 @@ public class ex6 {
         }
 
         System.out.println(res);
-
-        in.close();
     }
 }
